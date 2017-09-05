@@ -30,12 +30,26 @@ ul {
   padding-left: 0;
   list-style: none;
 }
+
 li {
   padding: 20px 0;
 }
-.list-group {
-  border: none !important;
+
+p.video-title {
+  color: #333;
+  font-weight: 600;
+  font-size: 20px;
 }
+
+p.video-description {
+  color: #333;
+  font-size: 16px;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }

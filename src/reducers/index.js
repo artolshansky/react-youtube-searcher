@@ -1,6 +1,12 @@
-import { combineReducers } from 'redux';
-import query from './query';
+import { combineReducers } from "redux";
+import { reducer as formReducer } from "redux-form";
+import { routerReducer } from "react-router-redux";
+import searchReducer from "./searchReducer";
+import videosReducer from "./videosReducer";
 
 export default combineReducers({
-  query
-})
+  form: formReducer,
+  routing: routerReducer,
+  searchState: searchReducer,
+  videosState: videosReducer
+});

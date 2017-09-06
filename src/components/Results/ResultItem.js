@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const ResultItem = ({result}) => {
   const { videoId } = result.id;
@@ -20,6 +21,10 @@ const ResultItem = ({result}) => {
       </Link>
     </li>
   )
+};
+
+ResultItem.PropTypes = {
+  result: PropTypes.object.isRequired
 };
 
 export default ResultItem;

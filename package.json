@@ -16,6 +16,7 @@
     "redux-saga": "^0.15.6"
   },
   "devDependencies": {
+    "prop-types": "^15.5.10",
     "react-scripts": "0.9.5",
     "redux-logger": "^3.0.6"
   },

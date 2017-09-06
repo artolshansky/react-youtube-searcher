@@ -1,6 +1,7 @@
 import React from "react";
 import { Field } from "redux-form";
 import _ from "lodash";
+import PropTypes from "prop-types";
 
 const SearchForm = ({ handleSubmit }) => {
     return(
@@ -31,6 +32,10 @@ const SearchForm = ({ handleSubmit }) => {
         </div>
       </form>
     )
+};
+
+SearchForm.PropTypes = {
+  handleSubmit: PropTypes.func.isRequired
 };
 
 export default SearchForm;
